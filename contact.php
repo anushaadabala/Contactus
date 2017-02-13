@@ -121,10 +121,10 @@ if($_POST){
 	//var_dump($contact->errors);
 }
 
-	$username =  isset($_POST['username'])?htmlentities($_POST['username']):"";
-	$email =  isset($_POST['email'])?htmlentities($_POST['email']):""; 
-	$website =  isset($_POST['website'])?htmlentities($_POST['website']):""; 
-	$comments =  isset($_POST['comments'])?htmlentities($_POST['comments']):"";
+	$username =  isset($_POST['username'])?$_POST['username']:"";
+	$email =  isset($_POST['email'])?$_POST['email']:""; 
+	$website =  isset($_POST['website'])?$_POST['website']:""; 
+	$comments =  isset($_POST['comments'])?$_POST['comments']:"";
 ?>
 <!DOCTYPE html>
 <html>
